@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+
+    <body>
+        <form action="" method="post" name="register">
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" placeholder="Enter your name"><br>
+        <label for="age">Age:</label><br>
+        <input type="number" name="age" placeholder="Enter your Age"><br>
+
+        <!-- Gender Radio buttons-->
+        <div class="radios">
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" value="male">
+        <span>Male</span>
+        <input type="radio" name="gender" value="female">
+        <span>Female</span>
+        </div>
+
+        <!-- Color Choice-->
+        <div class="selector">
+            <label for="fav-clr">Select your favourite color</label>
+            <select name="fav-clr" id="fav-clr">
+                <option value="">Select your favourite color</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="white">White</option>
+            </select>
+        </div>
+
+        <!--Checkboxes-->
+        <div class="checkers">
+            <label>Favorite Foods</label>
+           
+            <input type="checkbox" name="fav-food" class="fav-food" value="pizza">
+            <span>Pizza</span>
+            
+            <input type="checkbox" name="fav-food" class="fav-food" value="burger">
+            <span>Burger</span>
+            
+            <input type="checkbox" name="fav-food" class="fav-food" value="macroni">
+            <span>Macroni</span>
+
+        </div>
+
+        <button type="submit" >Submit</button>
+        </form>
+
+        <div id="out">
+
+        </div>
+
+        <script type='text/javascript' src='./userReg.js'></script>
+    </body>
+</html>
